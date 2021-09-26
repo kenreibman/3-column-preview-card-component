@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --ff-big: "Big Shoulders Display", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.9375rem;
+}
+
+body {
+  background-color: var(--background-headings-buttons);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 88%;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+section {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 30%;
+}
+
+h1 {
+  font-family: var(--ff-big);
+  text-transform: uppercase;
+  color: var(--background-headings-buttons);
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: var(--paragraph);
+  font-family: var(--ff-lexend);
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+.card-sedan {
+  background-color: var(--bright-orange);
+}
+
+.card-suv {
+  background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+/* BUTTONS */
+.btn {
+  font-family: var(--ff-lexend);
+  font-size: 1rem;
+  border-style: solid;
+  border-color: var(--background-headings-buttons);
+  width: 65%;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--background-headings-buttons);
+}
+
+.btn:active {
+  color: var(--background-headings-buttons);
+  background-color: transparent;
+}
+
+.btn-sedan {
+  color: var(--bright-orange);
+}
+
+.btn-suv {
+  color: var(--dark-cyan);
+}
+
+/*ATTRIBUTIONS*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 64%;
+  }
+
+  h1 {
+    margin-top: 2.8rem;
+  }
+
+  p {
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .container {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 38%;
+  }
+
+  h1 {
+    margin-top: 2.8rem;
+    font-size: 3rem;
+  }
+
+  p {
+    margin-bottom: 6rem;
+  }
+
+  .btn {
+    width: 70%;
+  }
+}
